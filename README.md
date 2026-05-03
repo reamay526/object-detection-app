@@ -138,6 +138,7 @@ Objects like **person, phone, and bottle** were easily detected because they are
 * ✅ Object counting (number of detected objects)
 * ✅ Alert system (PERSON DETECTED)
 
+
 ---
 
 ## 🔗 Submission Links
