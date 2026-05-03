@@ -69,3 +69,4 @@ if start:
         frame_rgb = cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGB)
         frame_window.image(frame_rgb)
 
+cap.release()
