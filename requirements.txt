@@ -1,6 +1,6 @@
-streamlit
-ultralytics
-numpy
+streamlit==1.35.0
+ultralytics==8.2.0
+numpy==1.26.4
 torch
 torchvision
-opencv-python
+opencv-python-headless
