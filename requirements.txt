@@ -3,4 +3,4 @@ ultralytics
 numpy
 torch
 torchvision
-opencv-python-headless
+opencv-python

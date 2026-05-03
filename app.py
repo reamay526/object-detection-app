@@ -5,6 +5,7 @@ from ultralytics import YOLO
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(page_title="Live Object Detection & Tracing", layout="wide")
 st.title("📷 Live Object Detection & Tracing")
+st.info("ℹ️ If running on Streamlit Cloud, webcam will not work. Run locally for live camera.")
 
 # ---------------- LOAD MODEL ----------------
 model = YOLO("yolov8n.pt")
@@ -16,12 +17,15 @@ frame_window = st.image([])
 
 cap = cv2.VideoCapture(0)
 
+if not cap.isOpened():
+    st.error("❌ Camera not accessible. Please check device permissions.")
+    st.stop()
+
 if start:
     while True:
         ret, frame = cap.read()
         if not ret:
-            st.error("❌ Camera not detected")
-            break
+            continue
 
         # ---------------- YOLO TRACKING ----------------
         results = model.track(frame, persist=True)
