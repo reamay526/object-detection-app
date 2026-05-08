@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+streamlit
+streamlit-webrtc
+ultralytics
+opencv-python-headless
+av
+numpy
+pillow
+=======
+streamlit
+streamlit-webrtc
+ultralytics
+opencv-python
+av
+torch
+torchvision
+numpy
+pillow
+scipy
+matplotlib
+>>>>>>> 8d20b3f9 (clean project (no venv))

@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+<<<<<<< HEAD
+*.log
+.env
+=======
+*.dll
+*.so
+>>>>>>> 8d20b3f9 (clean project (no venv))
