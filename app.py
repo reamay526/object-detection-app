@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
 from ultralytics import YOLO
@@ -116,7 +115,7 @@ if run:
     )
 else:
     st.warning("Camera is stopped. Enable 'Start Camera' to run detection.")
-=======
+
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
 from ultralytics import YOLO
@@ -205,4 +204,3 @@ webrtc_streamer(
     },
     media_stream_constraints={"video": True, "audio": False},
 )
->>>>>>> 8d20b3f9 (clean project (no venv))
