@@ -105,7 +105,7 @@ def video_frame_callback(frame):
 
 if run:
     webrtc_streamer(
-        key="object-detection",
+    key="object-detection-unique",
         video_frame_callback=video_frame_callback,
         async_processing=True,
         media_stream_constraints={"video": True, "audio": False},
