@@ -1,123 +1,116 @@
-<<<<<<< HEAD
-# 🚀 Real-Time Object Detection and Tracking using AI
+# 🧠 Real-Time Object Detection App (YOLOv8 + Streamlit)
 
-This project is a **Streamlit-based web application** that performs real-time object detection using a webcam and a YOLOv8 deep learning model. It detects common objects such as people, bottles, phones, and more, and displays bounding boxes with labels in real time.
-
----
-
-## 📌 Features
-
-- 🎥 Live webcam stream integration
-- 🧠 AI-powered object detection using YOLOv8
-- 📦 Bounding box visualization
-- 🏷️ Object labeling (e.g., person, bottle, cell phone)
-- 🔄 Real-time frame-by-frame processing
-- 📊 Optional object counting / tracking enhancement
-- ⚡ Lightweight and easy-to-run Streamlit interface
+This project is a web-based application that performs object detection using the YOLOv8 model. It allows users to upload images and automatically detects objects such as people, phones, and bottles with bounding boxes and labels.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Live Demo  
 
-- Python 🐍  
-- Streamlit 🌐  
-- OpenCV 👁️  
-- Ultralytics YOLOv8 🤖  
-- PyTorch 🔥  
-- NumPy 🔢  
 
 ---
 
-## 📁 Project Structure
-
-object-detection-app/
-
-├── app.py                # Main Streamlit application
-├── requirements.txt      # Dependencies
-├── .gitignore            # Ignored files for Git
-├── README.md             # Project documentation
+## 📂 GitHub Repository  
+https://github.com/reamay526/object-detection-app
 
 ---
 
-## ⚙️ Installation & Setup
+## 🎯 Project Objectives  
 
-### 1. Clone the repository
+- Understand basic computer vision concepts  
+- Apply YOLOv8 for object detection  
+- Build an interactive web app using Streamlit  
+- Demonstrate AI model inference on images  
+
+---
+
+## ⚙️ Features  
+
+- Upload image for detection  
+- Object detection using YOLOv8 (`yolov8n.pt`)  
+- Displays bounding boxes and labels  
+- Fast and lightweight model  
+
+---
+
+## 🧪 How It Works  
+
+1. User uploads an image  
+2. The image is processed using YOLOv8  
+3. Objects are detected and labeled  
+4. Bounding boxes are drawn  
+5. Output is displayed in the web app  
+
+---
+
+## 🛠️ Tech Stack  
+
+- Python  
+- Streamlit  
+- Ultralytics YOLOv8  
+- OpenCV  
+
+---
+
+## 📦 Installation Guide  
+
+```bash
 git clone https://github.com/reamay526/object-detection-app.git
 cd object-detection-app
-
-### 2. Create virtual environment (optional but recommended)
-python -m venv venv
-
-Activate:
-Windows:
-venv\Scripts\activate
-
-Mac/Linux:
-source venv/bin/activate
-
-### 3. Install dependencies
-pip install -r requirements.txt
-
-### 4. Run the application
-streamlit run app.py
-
----
-
-## 🎯 How It Works
-
-1. The webcam captures live video frames  
-2. Each frame is processed using YOLOv8 AI model  
-3. The model detects objects in real time  
-4. Bounding boxes and labels are drawn on detected objects  
-5. Streamlit displays the updated video feed in the browser  
-
----
-
-## 📊 Observations
-
-- Detection works best in good lighting conditions  
-- Large and common objects are detected more accurately  
-- Small or partially hidden objects may reduce accuracy  
-- Performance depends on system hardware  
-
----
-
-## ⚡ Possible Enhancements
-
-- Object counting  
-- Alert system  
-- Save detected frames  
-- Object tracking across frames  
-
----
-
-## 🧠 Learning Outcomes
-
-- Real-time computer vision  
-- AI model deployment  
-- Video frame processing  
-- Streamlit web app development  
-
----
-
-## 👨‍💻 Author
-REA MAY M. VILLANUEVA (BSCS3B)
-=======
-# Live Object Detection & Tracking (YOLOv8 + Streamlit)
-
-## Features
-- Real-time webcam detection
-- Object tracking
-- Object counting
-- Alert system (person detection)
-
-## Run Locally
 pip install -r requirements.txt
 streamlit run app.py
+```
 
-## Tech Stack
-- Python
-- Streamlit
-- YOLOv8
-- OpenCV
->>>>>>> 8d20b3f9 (clean project (no venv))
+---
+
+## 📊 Results & Observations  
+
+- Successfully detects common objects such as:
+  - Person  
+  - Cell phone  
+  - Bottle  
+
+- Accuracy depends on:
+  - Lighting conditions  
+  - Image clarity  
+  - Object size  
+
+- Performance:
+  - Fast on local machine  
+  - Slight delay on deployed app  
+
+---
+
+## 📸 Sample Outputs  
+
+(Add at least 5 screenshots here for submission)
+
+---
+
+## 🤔 Reflection  
+
+**What objects were easily detected?**  
+Large and clear objects such as people and bottles were detected easily.
+
+**What factors affect detection accuracy?**  
+Lighting, blur, occlusion, and resolution affect the detection results.
+
+---
+
+## ✨ Possible Enhancements  
+
+- Add object counting  
+- Enable webcam detection  
+- Save detected images  
+- Improve model accuracy using larger YOLO versions  
+
+---
+
+## 📌 Conclusion  
+
+This project demonstrates how AI and computer vision can be used to detect objects in images through a simple web interface. It highlights real-world applications of object detection systems.
+
+---
+
+## 👨‍💻 Author  
+
+REA MAY M. VILLANUEVA (BSCS 3B)
