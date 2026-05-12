@@ -1,6 +1,7 @@
 streamlit
 streamlit-webrtc
 ultralytics
-opencv-python-headless
+opencv-python-headless==4.13.0.92
 av
 numpy
+tornado==6.4.1
