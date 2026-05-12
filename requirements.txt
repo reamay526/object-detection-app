@@ -5,3 +5,6 @@ opencv-python-headless==4.13.0.92
 av
 numpy
 tornado==6.4.1
+
+# 🚫 block full opencv
+opencv-python==0
