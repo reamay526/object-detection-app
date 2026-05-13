@@ -10,8 +10,4 @@ pillow
 scipy
 matplotlib
 tornado
-<<<<<<< HEAD
 aiortc
-=======
-aiortc
->>>>>>> 88c47a70b05dbd8586e2a8c588d1d3ca534c1582
