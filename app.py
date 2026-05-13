@@ -14,7 +14,7 @@ model = load_model()
 st.set_page_config(page_title="Live Object Detection & Tracking", layout="centered")
 
 st.title("🎥 Live Object Detection & Tracking")
-st.caption("YOLOv8 real-time AI")
+st.caption("YOLOv8 real-time AI system")
 
 run = st.toggle("Start Camera", value=True)
 
