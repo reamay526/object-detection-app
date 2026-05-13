@@ -1,115 +1,161 @@
-# 🧠 Real-Time Object Detection App (YOLOv8 + Streamlit)
+# 🎥 Live Object Detection & Tracking using YOLOv8 + Streamlit
 
-This project is a web-based application that performs object detection using the YOLOv8 model. It allows users to upload images and automatically detects objects such as people, phones, and bottles with bounding boxes and labels.
+## 📌 Project Overview
 
----
+This project is a real-time AI web application built using **Streamlit**, **YOLOv8 (Ultralytics)**, and **WebRTC**.
 
-## 🚀 Live Demo  
-
-
----
-
-## 📂 GitHub Repository  
-https://github.com/reamay526/object-detection-app
+It captures live webcam video and performs real-time object detection and tracking with bounding boxes, labels, object counting, and alerts.
 
 ---
 
-## 🎯 Project Objectives  
+## 🚀 Features
 
-- Understand basic computer vision concepts  
-- Apply YOLOv8 for object detection  
-- Build an interactive web app using Streamlit  
-- Demonstrate AI model inference on images  
-
----
-
-## ⚙️ Features  
-
-- Upload image for detection  
-- Object detection using YOLOv8 (`yolov8n.pt`)  
-- Displays bounding boxes and labels  
-- Fast and lightweight model  
+- 🎥 Live webcam streaming in browser  
+- 🤖 YOLOv8 object detection (Ultralytics)  
+- 📦 Bounding box visualization  
+- 🏷️ Object labeling (person, car, bottle, chair, etc.)  
+- 🎯 Object tracking using ByteTrack  
+- 📊 Real-time object counting  
+- ⚠️ Person detection alert system  
+- 🎨 Color-coded detection per class  
+- 🔄 Smooth frame processing  
 
 ---
 
-## 🧪 How It Works  
+## 🧠 How It Works
 
-1. User uploads an image  
-2. The image is processed using YOLOv8  
-3. Objects are detected and labeled  
-4. Bounding boxes are drawn  
-5. Output is displayed in the web app  
+1. Webcam captures live video frames  
+2. Each frame is processed using YOLOv8 model  
+3. Objects are detected and tracked across frames  
+4. Bounding boxes and labels are drawn  
+5. Output is streamed live using Streamlit WebRTC  
 
 ---
 
-## 🛠️ Tech Stack  
+## 🛠️ Tech Stack
 
 - Python  
 - Streamlit  
+- Streamlit WebRTC  
 - Ultralytics YOLOv8  
 - OpenCV  
+- PyTorch  
+- PyAV  
+- NumPy  
 
 ---
 
-## 📦 Installation Guide  
+## 📂 Project Structure
+
+```
+
+object-detection-app/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── yolov8n.pt
+
+````
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/reamay526/object-detection-app
+cd object-detection-app
+````
+
+---
+
+### 2. Install dependencies
 
 ```bash
-git clone https://github.com/reamay526/object-detection-app.git
-cd object-detection-app
 pip install -r requirements.txt
+```
+
+---
+
+### 3. Run the app locally
+
+```bash
 streamlit run app.py
 ```
 
 ---
 
-## 📊 Results & Observations  
+## 📊 Expected Output
 
-- Successfully detects common objects such as:
-  - Person  
-  - Cell phone  
-  - Bottle  
-
-- Accuracy depends on:
-  - Lighting conditions  
-  - Image clarity  
-  - Object size  
-
-- Performance:
-  - Fast on local machine  
-  - Slight delay on deployed app  
+* Live webcam feed in browser
+* Real-time object detection
+* Bounding boxes and labels
+* Object counting display
+* Person detection alert
 
 ---
 
-## 📸 Sample Outputs  
+## 📈 Observations
 
-(Add at least 5 screenshots here for submission)
-
----
-
-## 🤔 Reflection  
-
-**What objects were easily detected?**  
-Large and clear objects such as people and bottles were detected easily.
-
-**What factors affect detection accuracy?**  
-Lighting, blur, occlusion, and resolution affect the detection results.
+* Works best with good lighting
+* Accuracy decreases in low light
+* Small objects may not always be detected
+* Performance depends on device hardware
 
 ---
 
-## ✨ Possible Enhancements  
+## 🧪 Enhancements Implemented
 
-- Add object counting  
-- Enable webcam detection  
-- Save detected images  
-- Improve model accuracy using larger YOLO versions  
-
----
-
-## 📌 Conclusion  
-
-This project demonstrates how AI and computer vision can be used to detect objects in images through a simple web interface. It highlights real-world applications of object detection systems.
+* Object counting system
+* Person detection alert system
+* Color-coded bounding boxes
+* Real-time tracking using ByteTrack
+* Live annotation overlay
 
 ---
 
-## 👨‍💻 Author  
-REA MAY M. VILLANUEVA (BSCS 3B)
+## ❓ Reflection
+
+### 1. What objects were easily detected?
+
+* Person
+* Bottle
+* Chair
+
+### 2. What factors affect accuracy?
+
+* Lighting conditions
+* Camera quality
+* Distance from camera
+* Motion blur
+
+---
+
+## ⚠️ Limitations
+
+* Requires stable internet for WebRTC
+* May lag on low-end devices
+* Tracking may reset during fast motion
+* Performance depends on CPU/GPU
+
+---
+
+## 🚀 Future Improvements
+
+* Add object filtering options
+* Improve FPS performance
+* Add snapshot saving feature
+* Add analytics dashboard
+
+---
+
+## 👨‍💻 Author
+
+Rea May M. Villanueva (BSCS 3B)
+
+---
+
+## 📜 License
+
+This project is for educational purposes only.
